@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Simple Notes</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="styles/note.css">
+</head>
+<body>
+	<aside class="well" id="sidebar">
+		<div class="toggler"></div>
+		<form id="admin-form">
+			<h5>Admin</h5>
+			<button class="btn btn-primary">Save</button>
+			<button class="btn btn-danger">Delete</button>
+		</form>
+		<form class="navbar-form" id="type-form">
+			<h5>Settings</h5>
+			<input class="type-size" type="range" min="0" max="3" value="1" step="1">
+			<input class="border-radius" type="range" min="0" max="40" value="0" step="1">
+			<input class="text-foreground-color" type="color">
+			<input class="text-background-color" type="color">
+			<input class="background-color-start" type="color">
+			<input class="background-color-end" type="color">
+		</form>
+		<form>
+			<h5>Category</h5>
+			<select>
+				<option>Lorem</option>
+				<option>Ipsum</option>
+				<option>Dolores</option>
+				<option>Amet</option>
+			</select>
+		</form>
+		<form class="navbar-form tags">
+			<h5>Tags</h5>
+			<input type="text" class="span2">
+			<button type="submit" class="btn">add</button>
+		</form>
+		<form class="navbar-tags" id="tag-form">
+			<span class="label tag">lorem<span class="x">x</span></span>
+			<span class="label tag">ipsum<span class="x">x</span></span>
+			<span class="label tag">dolores<span class="x">x</span></span>
+			<span class="label tag">sit<span class="x">x</span></span>
+			<span class="label tag">amet<span class="x">x</span></span>
+			<span class="label tag">elit<span class="x">x</span></span>
+			<span class="label tag">justo<span class="x">x</span></span>
+			<span class="label tag">metus<span class="x">x</span></span>
+			<span class="label tag">odio<span class="x">x</span></span>
+		</form>
+	</aside>
+	<div id="main-content">
+		<section class="text-view" id="text-editor" data-size="normal">
+			<ul class="nav">
+				<li class="resize"><i class="icon-resize-full"></i></li>
+			</ul>
+			<h2 contenteditable="">Lorem Ipsum Dolores Sit Amet</h2>
+			<pre contenteditable="">
+Integer non lectus ac metus lacinia molestie quis quis neque. Curabitur in pulvinar nisi. Proin iaculis viverra hendrerit. Nam ut adipiscing massa. Suspendisse potenti. Aliquam id lectus vel tortor pulvinar fermentum. Fusce imperdiet pulvinar dolor vel rutrum. Pellentesque lacinia, urna vitae sodales semper, risus tortor condimentum metus, et sodales nisi dolor quis diam.
+
+Nulla vel velit in leo facilisis posuere. Curabitur ultrices suscipit urna, quis mattis nisi condimentum vitae. Pellentesque nulla purus, blandit nec aliquet id, bibendum fringilla neque. Nam tempus, metus id cursus vestibulum, massa leo porttitor tortor, id egestas arcu ipsum ut erat.
+
+Maecenas sem nisl, porta in elementum a, feugiat id urna. Cras sed condimentum orci. Aenean at sem ut neque rhoncus varius a vitae tortor. Phasellus dui sapien, dignissim id auctor tristique, aliquet quis ligula.
+
+Integer non lectus ac metus lacinia molestie quis quis neque. Curabitur in pulvinar nisi. Proin iaculis viverra hendrerit. Nam ut adipiscing massa. Suspendisse potenti. Aliquam id lectus vel tortor pulvinar fermentum. Fusce imperdiet pulvinar dolor vel rutrum. Pellentesque lacinia, urna vitae sodales semper, risus tortor condimentum metus, et sodales nisi dolor quis diam.
+
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dapibus ultricies auctor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc nec urna tortor, eu scelerisque libero. Praesent fermentum quam non massa sodales cursus.
+
+Nulla vel velit in leo facilisis posuere. Curabitur ultrices suscipit urna, quis mattis nisi condimentum vitae. Pellentesque nulla purus, blandit nec aliquet id, bibendum fringilla neque. Nam tempus, metus id cursus vestibulum, massa leo porttitor tortor, id egestas arcu ipsum ut erat.
+
+Maecenas sem nisl, porta in elementum a, feugiat id urna. Cras sed condimentum orci. Aenean at sem ut neque rhoncus varius a vitae tortor. Phasellus dui sapien, dignissim id auctor tristique, aliquet quis ligula.
+
+Integer non lectus ac metus lacinia molestie quis quis neque. Curabitur in pulvinar nisi. Proin iaculis viverra hendrerit. Nam ut adipiscing massa. Suspendisse potenti. Aliquam id lectus vel tortor pulvinar fermentum. Fusce imperdiet pulvinar dolor vel rutrum. Pellentesque lacinia, urna vitae sodales semper, risus tortor condimentum metus, et sodales nisi dolor quis diam.
+
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In dapibus ultricies auctor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc nec urna tortor, eu scelerisque libero. Praesent fermentum quam non massa sodales cursus.
+			</pre>
+		</section>
+	</div>
+
+	<script src="components/prefix-free/prefixfree.min.js"></script>
+	<script src="components/jquery/jquery.js"></script>
+	<script src="scripts/note.js"></script>
+</body>
+</html>
